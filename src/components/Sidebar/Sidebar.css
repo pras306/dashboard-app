@@ -1,0 +1,62 @@
+.app__sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    color: var(--color-black);
+}
+
+.app__sidebar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app__sidebar-logo img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: contain;
+}
+
+.app__sidebar-logo h4 {
+    font-family: var(--ff-inter-bold);
+    font-size: 1.5em;
+}
+
+.app__sidebar-menu_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    gap: 1rem;
+    padding: 1.5rem 0;
+    padding-left: 2.5rem;
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+
+.app__sidebar-menu_item:hover {
+    transform: scale(1.1);
+}
+
+.app__sidebar-menu_item span {
+    font-family: var(--ff-inter-regular);
+    font-size: 1.1em;
+    flex: 1;
+}
+
+.app__sidebar-footer {
+    padding-left: 4.5rem;
+}
+
+.active {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: linear-gradient( to right, var(--color-pink) 5%, var(--activeItem) 5%);
+    cursor: default;
+}
+
+.active:hover {
+    transform: none;
+}

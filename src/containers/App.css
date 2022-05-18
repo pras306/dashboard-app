@@ -1,3 +1,17 @@
 .app {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-gradient);
+  height: 100vh;
+}
+
+.app__glass {
+  display: grid;
+  grid-template-columns: 15rem auto 15rem;
+  width: 95%;
+  height: 95%;
+  background: var(--color-glass);
+  border-radius: 5rem;
+  /* padding: 2rem; */
 }
