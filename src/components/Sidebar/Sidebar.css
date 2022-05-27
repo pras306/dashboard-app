@@ -60,3 +60,21 @@
 .active:hover {
     transform: none;
 }
+
+@media screen and (max-width: 1024px) {
+    .app__sidebar {
+      grid-row: 1 / span 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app__sidebar-menu_item>svg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .app__sidebar {
+        display: none;
+    }
+}
