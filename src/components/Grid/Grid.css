@@ -1,0 +1,37 @@
+.app__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    min-height: 40vh;
+}
+
+.app__grid td {    
+    font-family: var(--ff-inter-regular);
+    color: var(--color-black);
+    text-align: center;
+}
+
+.accept, .reject, .primary {
+    padding: 0.75rem;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.accept {
+    background-color: lightgreen;
+    color: green !important;
+}
+
+.reject {
+    background-color: lightcoral;
+    color: red !important;
+}
+
+.primary {
+    background-color: skyblue;
+    color: white !important;
+}
+
+.app__grid-link {
+    text-decoration: none;
+    color: dodgerblue;
+}

@@ -1,0 +1,6 @@
+.app__chart_card {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    padding: 1.2rem 0;
+}

@@ -1,0 +1,94 @@
+.app__card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    border-radius: 20px;
+    min-height: 20vh;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.app__card:hover {
+    box-shadow: none !important;
+}
+
+.app__card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.app__card-header>span {
+    flex: 1;
+}
+
+.app__card-header>h3 {
+    font-family: var(--ff-inter-medium);
+    padding: 0.75rem;
+    letter-spacing: 0.05rem;
+}
+
+.CircularProgressbar {
+    width: 7rem !important;
+    overflow: visible;
+}
+
+.CircularProgressbar-path {
+    stroke: white !important;
+    stroke-width: 8px !important;
+    /* filter: drop-shadow(2px 4px 6px white); */
+}
+
+.CircularProgressbar-trail {
+    display: none;
+}
+
+.CircularProgressbar-text {
+    fill: white !important;
+    font-family: var(--ff-inter-regular);
+    font-size: 14px !important;
+}
+
+.app__card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.2rem;
+}
+
+.app__card-content_value {
+    font-family: var(--ff-inter-regular);
+    font-weight: 800;
+    font-size: 1.5em;
+    letter-spacing: 0.05rem;
+}
+
+@media screen and (max-width: 1440px) {
+    .app__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .app__card-content {
+        display: none;
+    }   
+}
+
+@media screen and (max-width: 1024px) {
+    .app__card {
+        border-radius: 50%;
+    }
+
+    .CircularProgressbar-path {
+        stroke-width: 6px !important;
+        /* filter: drop-shadow(2px 2px 2px white); */
+    }
+
+    .app__card-header>h3 {
+        display: none;
+    }
+}
