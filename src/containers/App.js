@@ -1,26 +1,19 @@
 import React from 'react';
-import { UilEstate, UilClipboardAlt, UilUsersAlt, UilPackage, UilChart } from '@iconscout/react-unicons';
 
 import './App.css';
+import { SidebarData } from '../data/AppData';
 import Sidebar from '../components/Sidebar/Sidebar';
+import MainContent from './MainContent/MainContent';
+import SideContent from './SideContent/SideContent';
 
 const App = () => {
-
-  const menuOptions = [
-    { icon: UilEstate, heading: 'Dashboard' },
-    { icon: UilClipboardAlt, heading: 'Orders' },
-    { icon: UilUsersAlt, heading: 'Customers' },
-    { icon: UilPackage, heading: 'Orders' },
-    { icon: UilChart, heading: 'Analytics' },
-  ]
-
 
   return(
     <div className='app'>
       <div className='app__glass'>
-        <Sidebar menuOptions={menuOptions} />
-        <div>Main Cards</div>
-        <div>Users and Reviews</div>
+        <Sidebar menuOptions={SidebarData} />
+        <MainContent />
+        <SideContent />
       </div>
     </div>
   )

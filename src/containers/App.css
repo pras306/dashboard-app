@@ -8,10 +8,22 @@
 
 .app__glass {
   display: grid;
-  grid-template-columns: 15rem auto 15rem;
+  grid-template-columns: 15vw auto 25vw;
   width: 95%;
   height: 95%;
   background: var(--color-glass);
   border-radius: 5rem;
-  /* padding: 2rem; */
+}
+
+@media screen and (max-width: 1024px) {
+  .app__glass {
+    grid-template-columns: 25vw auto;
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app__glass {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
