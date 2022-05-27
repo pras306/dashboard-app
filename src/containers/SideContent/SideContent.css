@@ -1,0 +1,19 @@
+.app__side {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+}
+
+.app__side > h2 {
+    font-family: var(--ff-inter-bold);
+    font-weight: 800;
+    font-size: 2em;
+    color: var(--color-black);
+    margin: 1.2rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .app__side {
+        overflow: scroll;
+    }
+}
